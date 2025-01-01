@@ -1,2 +1,21 @@
+/* Grid container styles */
+.holder {
+  display: grid;                   /* Enables grid layout */
+  grid-template-rows: repeat(2, 1fr); /* Creates 2 equal rows */
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  width: 200px;                    /* Total grid width */
+  height: 200px;                   /* Total grid height */
+  gap: 0;                          /* Optional: Adjust spacing between grid items */
+  border: 1px solid #000;          /* Optional: Adds a border for visualization */
+}
+
+/* Optional styling for items */
+.item-1, .item-2, .item-3, .item-4 {
+  display: flex;                   /* Makes items flexible containers */
+  justify-content: center;         /* Centers text horizontally */
+  align-items: center;             /* Centers text vertically */
+  background-color: lightblue;     /* Adds a background for better visibility */
+  border: 1px solid #000;          /* Adds a border around each item */
+}
 
 /* Your CSS Code here. */
